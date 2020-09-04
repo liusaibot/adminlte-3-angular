@@ -20,6 +20,16 @@ import { NotificationsDropdownMenuComponent } from './pages/main/header/notifica
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppButtonComponent } from './components/app-button/app-button.component';
 
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTableModule } from '@angular/material/table';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatInputModule } from '@angular/material/input';
+
 import { registerLocaleData } from '@angular/common';
 import localeEn from '@angular/common/locales/en';
 import { UserDropdownMenuComponent } from './pages/main/header/user-dropdown-menu/user-dropdown-menu.component';
@@ -54,6 +64,15 @@ registerLocaleData(localeEn, 'en-EN');
       preventDuplicates: true,
     }),
     NgbModule,
+    MatFormFieldModule,
+    MatTableModule,
+    MatMenuModule,
+    MatPaginatorModule,
+    MatIconModule,
+    MatSlideToggleModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
